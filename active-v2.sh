@@ -17,4 +17,6 @@ echo 'IPADDR=10.48.114.194' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
 echo 'NETMASK=255.0.0.0' >> /etc/sysconfig/network-scripts/ifcfg-eth0:100
 service network restart
 /usr/bin/perl -pi -e 's/^ethernet_dev=.*/ethernet_dev=eth0:100/' /usr/local/directadmin/conf/directadmin.conf
-service directadmin start
+ifup eth0:100
+systemctl restart directadmin
+ifdown eth0:100
