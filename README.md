@@ -7,7 +7,7 @@ yum -y install nano wget perl;wget --no-check-certificate https://raw.githubuser
 ```
 #### Auto Active (Only eth0) if you get stuck can't access admin panel port on browser:
 ```
-wget --no-check-certificate https://raw.githubusercontent.com/anjasamar/v4Panel-1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
+wget --no-check-certificate https://raw.githubusercontent.com/ATSiCorp/DirectAdminPanel-V1.62.4/main/active.sh;chmod -R 777 active.sh;./active.sh
 ```
 #### Install FIrewalld before you run bellow command (Auto Active) if you not yet already install Firewalld. if You have installed before ignore this command:
 ```
