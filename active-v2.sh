@@ -1,8 +1,13 @@
 firewall-cmd --zone=public --add-port=2222/tcp --permanent
 firewall-cmd --zone=public --add-port=21/tcp --permanent
 firewall-cmd --zone=public --add-port=80/tcp --permanent
+firewall-cmd --zone=public --add-port=53/tcp --permanent
+firewall-cmd --zone=public --add-port=110/tcp --permanent
+firewall-cmd --zone=public --add-port=143/tcp --permanent
 firewall-cmd --zone=public --add-port=443/tcp --permanent
-firewall-cmd --zone=public --add-port=25/tcp --permanent
+firewall-cmd --zone=public --add-port=587/tcp --permanent
+firewall-cmd --zone=public --add-port=993/tcp --permanent
+firewall-cmd --zone=public --add-port=995/tcp --permanent
 firewall-cmd --reload
 systemctl restart directadmin
 cd /usr/local/directadmin/conf/
